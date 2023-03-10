@@ -1,11 +1,26 @@
 <template>
   <div>
-    Hello world!
+    <p-index-vue/>
   </div>
 </template>
 
-<script setup>
+<script>
+import pIndexVue from "./components/p-index.vue";
 
+export default{
+   name: 'PApp',
+   components: {
+    pIndexVue
+   },
+   data(){
+      return { }
+   },
+   methods: { },
+   created() { },
+   mounted() { },
+   computed: { },
+   
+}
 </script>
 
 <style scoped>
