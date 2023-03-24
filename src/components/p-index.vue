@@ -1,13 +1,21 @@
 <template>
    <div class='p-index'>
-      Hello world!
+      <p-navbar-vue/>
+      <!-- Hello world! -->
+      <div class="content">
+         Content
+      </div>
    </div>
 </template>
 
 <script>
+import pNavbarVue from './p-navbar.vue'
+
 export default{
    name: 'PIndex',
-   components: { },
+   components: {
+      pNavbarVue
+   },
    data(){
       return { }
    },
