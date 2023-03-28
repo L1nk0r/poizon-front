@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
+@font-face {
+   font-family: WildWorld;
+   src: url('./wild-world.ttf');
+}
+
 :root{
    --dark: rgb(0, 0, 0);
    --platinum: rgb(204, 219, 220);
@@ -18,13 +23,24 @@
    /* border: 1px dashed red; */
 }
 
+.p-index{
+   height: 100%;
+   width: 100%;
+   /* background: rgb(2,0,36);
+   background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(28,93,153,1) 62%, rgba(128,206,215,1) 100%); */
+
+   /* background: rgb(2,0,36);
+   background: linear-gradient(153deg, rgba(2,0,36,1) 0%, rgba(28,93,153,1) 53%, rgba(128,206,215,1) 100%); */
+}
+
 .header{
-   font-family: 'Bungee', cursive;
+   /* font-family: 'Bungee', cursive; */
+   font-family: 'WildWorld';
    display: flex;
    align-items: center;
    cursor: pointer;
 
-   margin-left: 50px;
+   margin-left: 600px;
 
    font-size: 48px !important;
 }
@@ -33,19 +49,24 @@ nav{
    display: flex;
    /* width: 90%;
    margin-left: 5%; */
+   margin-top: 20px;
    width: 100%;
    align-items: center;
+
+   justify-content: center;
    flex-wrap: wrap;
    padding: 20px 0;
-   color: var(--nonphotoblue1);
+   color: var(--dark);
 
-   background-color: var(--dark);
+   /* background-color: var(--dark); */
 }
 
 nav ul{
-   flex: 1;
+   /* flex: 1;
    text-align: right;
-   padding-right: 30px;
+   padding-right: 30px; */
+
+   margin-left: 500px;
 }
 
 nav ul li{
@@ -106,4 +127,10 @@ nav button{
 .content{
    width: 100%;
    height: 100vh;
+}
+
+.svg {
+   width: 23px;
+   height: 23px;
+   fill: var(--platinum);
 }

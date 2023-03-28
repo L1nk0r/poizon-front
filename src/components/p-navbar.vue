@@ -4,13 +4,18 @@
          <h1 class="header"><!-- <img src="../assets/logo.png" class="logo"/> -->POIZON</h1> 
 
          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">How to use</a></li>
-            <li><a href="#">Lets shop</a></li>
+            <li>
+               <a href="#">
+                  <img src='../../icons/search.svg' alt='' class='svg icon'>
+               </a>
+            </li>
+            <li>
+               <a href="#">
+                  <img src='../../icons/cart.svg' alt='' class='svg icon'>
+               </a>
+            </li>
+            <!-- <li><a href="#">C</a></li> -->
          </ul>
-         <!-- <button 
-            class="signIn"
-            @click="regFormOpen">Sign in</button> -->
       </nav>
    </div>
 </template>

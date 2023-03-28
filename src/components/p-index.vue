@@ -3,7 +3,7 @@
       <p-navbar-vue/>
       <!-- Hello world! -->
       <div class="content">
-         Content
+         <!-- Content -->
       </div>
    </div>
 </template>
