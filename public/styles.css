@@ -40,7 +40,7 @@
    align-items: center;
    cursor: pointer;
 
-   margin-left: 600px;
+   margin-left: 670px;
 
    font-size: 48px !important;
 }
@@ -66,7 +66,7 @@ nav ul{
    text-align: right;
    padding-right: 30px; */
 
-   margin-left: 500px;
+   margin-left: 350px;
 }
 
 nav ul li{
@@ -134,7 +134,3 @@ nav button{
    height: 23px;
    fill: var(--platinum);
 }
-
-/* .content {
-   background-color: bisque;
-} */

@@ -14,7 +14,11 @@
                   <img src='../../icons/cart.svg' alt='' class='svg icon'>
                </a>
             </li>
-            <!-- <li><a href="#">C</a></li> -->
+            <li>
+               <a href="#">
+                  <img src='../../icons/qa.svg' alt='' class='svg icon'>
+               </a>
+            </li>
          </ul>
       </nav>
    </div>

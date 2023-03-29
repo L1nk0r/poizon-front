@@ -43,7 +43,7 @@ export default{
   width: 100%;
   height: 70vh;
 
-  transform: skew(-5deg);
+  transform: skew(-6deg);
 }
 
 .item {
