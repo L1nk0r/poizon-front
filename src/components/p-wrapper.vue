@@ -13,6 +13,7 @@
 </template>
 
 <script>
+import { mapActions, mapGetters } from "vuex";
 
 export default{
    name: 'PWrapper',
@@ -22,10 +23,22 @@ export default{
    data(){
       return { }
    },
-   methods: { },
+   methods: {
+    ...mapActions([
+      "GET_PRODUCTS_FROM_API"
+    ])
+   },
    created() { },
-   mounted() { },
-   computed: { },
+   mounted() {
+    this.GET_PRODUCTS_FROM_API().then((response) => {
+      if (response.data){
+        console.log("Products arrived!");
+      }
+    })
+   },
+   computed: {
+    ...mapGetters(["PRODUCTS"])
+   },
 
 }
 </script>
