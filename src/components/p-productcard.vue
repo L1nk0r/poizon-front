@@ -1,6 +1,6 @@
 <template>
    <div class="card">
-      1
+      <h1>{{ product_data.name }}</h1>
    </div>
 </template>
 
@@ -10,6 +10,12 @@ export default{
    components: { },
    data(){
       return { }
+   },
+   props: {
+      product_data: {
+         type: Object,
+         default: () => {},
+      }
    },
    methods: { },
    created() { },
@@ -21,8 +27,8 @@ export default{
 
 <style>
 .card {
-   justify-content: center;
-   align-items: center;
+   /* justify-content: center;
+   align-items: center; */
 
    height: 100px;
    background-color: bisque;
