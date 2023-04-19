@@ -39,7 +39,8 @@ export default {
 
 <style>
 .productsexample {
-  margin-top: 50px;
+  /* margin-top: 50px; */
+  /* margin-left: 100px; */
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
