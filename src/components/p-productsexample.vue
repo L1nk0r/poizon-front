@@ -41,6 +41,6 @@ export default {
 .productsexample {
   margin-top: 50px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 </style>

@@ -2,7 +2,7 @@
    <div class='p-index'>
       <p-navbar-vue/>
       <div class="content">
-         <!-- <p-wrapper-vue/> -->
+         <p-wrapper-vue/>
          <p-productsexample-vue/>
       </div>
    </div>
@@ -11,13 +11,13 @@
 <script>
 import pNavbarVue from './p-navbar.vue'
 import pProductsexampleVue from './p-productsexample.vue'
-/* import pWrapperVue from './p-wrapper.vue' */
+import pWrapperVue from './p-wrapper.vue'
 
 export default{
    name: 'PIndex',
    components: {
       pNavbarVue,
-      /* pWrapperVue, */
+      pWrapperVue,
       pProductsexampleVue
    },
    data(){

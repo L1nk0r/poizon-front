@@ -1,11 +1,28 @@
 <template>
-  <div class="product_card">
+  <!-- <div class="product_card">
     <img :src="getProductImg()" class="preview_image" />
     <div class="product_details">
       <h5>{{ product_data.name }}</h5>
       <h4>{{ product_data.price }}</h4>
     </div>
-  </div>
+  </div> -->
+
+  <div class="product_card">
+         <img :src="getProductImg()" class="product-img"/>
+         <div class="product-info">
+            <div class="product-text">
+               <h1>{{ product_data.name }} </h1>
+               <h2>Lorem ipsum dolor sit amet.</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste necessitatibus delectus eveniet, accusantium, odit excepturi quis, animi illum soluta blanditiis libero temporibus molestiae veritatis? Aspernatur ipsam illo iusto animi soluta!</p>
+            </div>
+
+            <div class="product-price-btn">
+               <p><span>{{ product_data.price }}</span>$</p>
+               <button type="button">Buy</button>
+            </div>
+            
+         </div>
+      </div>
 </template>
 
 <script>
@@ -33,47 +50,122 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-
 .product_card {
-  /* border: 1px solid black; */
-  padding: 15px;
-  border-radius: 3%;
-  font-size: 42px;
-  font-family: 'Oswald', sans-serif;
-
-  margin: 20px;
-
-  transition: 0.3s;
+  height: 420px;
+  width: 654px;
+  margin: 30px;
+  border-radius: 7px 7px 7px 7px;
+  
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
 }
 
-.product_card:hover {
-  /* background-color: red; */
-  -webkit-box-shadow: 6px 8px 15px 3px rgba(0, 0, 0, 0.35);
-  box-shadow: 6px 8px 15px 3px rgba(0, 0, 0, 0.35);
+.product-img {
+  float: left;
 
-  cursor: pointer;
+   object-fit: cover;
+
+  width: 45%;
 }
 
-.product_card:hover .product_card1 .product_details {
+.product-img img {
+  border-radius: 7px 0 0 7px;
+}
+
+.product-info {
+  float: left;
+  height: 420px;
+  width: 327px;
+  border-radius: 0 7px 10px 7px;
+  background-color: #ffffff;
+}
+
+.product-text {
+  height: 300px;
+  width: 327px;
+}
+
+.product-text h1 {
+  margin: 0 0 0 38px;
+  padding-top: 52px;
+  font-size: 34px;
+  color: #474747;
+}
+
+.product-text h1,
+.product-price-btn p {
+  font-family: 'Bentham', serif;
+}
+
+.product-text h2 {
+  margin: 0 0 47px 38px;
+  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #d2d2d2;
+  letter-spacing: 0.2em;
+}
+
+.product-text p {
+  height: 125px;
+  margin: 0 0 0 38px;
+  font-family: 'Playfair Display', serif;
+  color: #8d8d8d;
+  line-height: 1.7em;
+  font-size: 15px;
+  font-weight: lighter;
+  overflow: hidden;
+}
+
+.product-price-btn {
+  height: 103px;
+  width: 327px;
   margin-top: 30px;
+  position: relative;
 }
 
-.product_card img {
-  width: 200px;
+.product-price-btn p {
+  display: inline-block;
+  position: absolute;
+  top: -13px;
+  height: 50px;
+  font-family: 'Trocchi', serif;
+  margin: 0 0 0 38px;
+  font-size: 28px;
+  font-weight: lighter;
+  color: #474747;
 }
 
-.product_card .product_details {
-  margin-top: 20px;
-  border-top: 1px solid #c1bddb;
-  margin-bottom: 20px;
-
-  transition: 0.3s;
+span {
+  display: inline-block;
+  height: 50px;
+  font-family: 'Suranna', serif;
+  font-size: 34px;
 }
 
-.product_card .product_details h5 {
+.product-price-btn button {
+  float: right;
+  display: inline-block;
+  height: 50px;
+  width: 176px;
+  margin: 0 40px 0 16px;
+  box-sizing: border-box;
+  border: transparent;
+  border-radius: 60px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  background-color: #9cebd5;
+  cursor: pointer;
+  outline: none;
 }
 
-.product_card .product_details h4 {
+.product-price-btn button:hover {
+  background-color: #79b0a1;
 }
 </style>
