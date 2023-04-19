@@ -1,11 +1,9 @@
 <template>
-  <div class="card">
-    <img :src="getProductImg()" class="preview_image"/>
-
+  <div class="product_card">
+    <img :src="getProductImg()" class="preview_image" />
     <div class="product_details">
       <h5>{{ product_data.name }}</h5>
-      <h5>{{ product_data.id }}</h5>
-      <h5>{{ product_data.price }}</h5>
+      <h4>{{ product_data.price }}</h4>
     </div>
   </div>
 </template>
@@ -35,26 +33,47 @@ export default {
 </script>
 
 <style>
-.card {
-  /* justify-content: center;
-   align-items: center; */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
-  /* border: 1px black solid; */
+.product_card {
+  /* border: 1px solid black; */
+  padding: 15px;
+  border-radius: 3%;
+  font-size: 42px;
+  font-family: 'Oswald', sans-serif;
+
   margin: 20px;
-  box-shadow: 5.9px 11.8px 11.8px hsl(0deg 0% 0% / 0.32);
-  border-radius: 15px;
+
+  transition: 0.3s;
 }
 
-.preview_image {
-  width: 80%;
+.product_card:hover {
+  /* background-color: red; */
+  -webkit-box-shadow: 6px 8px 15px 3px rgba(0, 0, 0, 0.35);
+  box-shadow: 6px 8px 15px 3px rgba(0, 0, 0, 0.35);
+
+  cursor: pointer;
 }
 
-.product_details{
-   /* border: 1px solid red; */
+.product_card:hover .product_card1 .product_details {
+  margin-top: 30px;
+}
 
-   height: 20%;
+.product_card img {
+  width: 200px;
+}
 
-   font-family: 'Montserrat';
-   font-weight: 400;
+.product_card .product_details {
+  margin-top: 20px;
+  border-top: 1px solid #c1bddb;
+  margin-bottom: 20px;
+
+  transition: 0.3s;
+}
+
+.product_card .product_details h5 {
+}
+
+.product_card .product_details h4 {
 }
 </style>
